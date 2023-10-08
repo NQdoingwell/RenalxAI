@@ -1,6 +1,5 @@
 import os
 import argparse
-import datetime
 import logging
 import random
 
@@ -14,7 +13,7 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 import torchmetrics
 # from torchsummary import summary
-
+# test
 import shap
 
 from layers_custom2 import SparseTF, PNet, SimpleModel
@@ -26,7 +25,7 @@ from dataset import MyDataset
 def main(args):
     """
     这个main中的模型修改后最终输出结果为每层输出结果平均值；
-    并增加了shap归因方法进行解释
+    并  增加 了 shap归因方法进行33解释
     """
     # 用当前时间作为文件夹名字，就不会跟前面的记录混乱了
     if args.log_dir == "default":
